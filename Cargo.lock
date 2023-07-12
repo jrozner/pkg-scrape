@@ -995,6 +995,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "26072860ba924cbfa98ea39c8c19b4dd6a4a25423dbdf219c1eca91aa0cf6964"
 
 [[package]]
+name = "pkg-scrape"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "futures",
+ "log",
+ "reqwest",
+ "scraper",
+ "simple_logger",
+ "tokio",
+]
+
+[[package]]
 name = "ppv-lite86"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1169,19 +1182,6 @@ dependencies = [
  "selectors",
  "smallvec",
  "tendril",
-]
-
-[[package]]
-name = "scrapy"
-version = "0.1.0"
-dependencies = [
- "clap",
- "futures",
- "log",
- "reqwest",
- "scraper",
- "simple_logger",
- "tokio",
 ]
 
 [[package]]
